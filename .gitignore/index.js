@@ -846,4 +846,4 @@ if(message.content === prefix + prefix3 + 'laughing_coffin'){
 //----------------------------Connection--------------------------------------
 //----------------------------------------------------------------------------
 
-bot.login('NzIyMTY3MjM5Nzg0MjY3ODk3.Xuzlqw.rSOUgye1K4Puy1a7Pbf45ZuQxSY');
+bot.login(process.env.TOKEN);
