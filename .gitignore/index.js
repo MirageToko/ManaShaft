@@ -80,27 +80,12 @@ var mchannel1 = bot.channels.cache.get('722793744230907974'); //Communauté de P
 var mchannel2 = bot.channels.cache.get('722814412364447744'); //Ulysse.OKLM le bot
 
 function sendAll(){
-  try {
+
     mchannel0.send(gembed);
     mchannel1.send(gembed);
     mchannel2.send(gembed);
-  } catch (error) {
-    try {
-      mchannel1.send(gembed);
-      mchannel2.send(gembed);
-      console.log(`${mchannel0} est K.O`);
-    } catch (error) {
-      try {
-        mchannel0.send(gembed);
-        mchannel2.send(gembed);
-        console.log(`${mchannel1} est K.O`);
-      } catch (error) {
-          mchannel0.send(gembed);
-          mchannel1.send(gembed);
-          console.log(`${mchannel2} est K.O`);  
-      }
-    }
-  }
+
+
 }
 
 //----------------------------------------------------------------------------
