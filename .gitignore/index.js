@@ -76,40 +76,28 @@ bot.on('message', message =>{
 //----------------------------------------------------------------------------
 
 var mchannel0 = bot.channels.cache.get('723565220873895936'); //Clairière Fantôme
-var mchannel1 = bot.channels.cache.get('722527252130299924'); //Zedvum
-var mchannel2 = bot.channels.cache.get('722793744230907974'); //Communauté de Pier Shadow 1
-var mchannel3 = bot.channels.cache.get('722814412364447744'); //Ulysse.OKLM le bot
+var mchannel1 = bot.channels.cache.get('722793744230907974'); //Communauté de Pier Shadow 1
+var mchannel2 = bot.channels.cache.get('722814412364447744'); //Ulysse.OKLM le bot
 
 function sendAll(){
   try {
     mchannel0.send(gembed);
     mchannel1.send(gembed);
     mchannel2.send(gembed);
-    mchannel3.send(gembed);
   } catch (error) {
     try {
       mchannel1.send(gembed);
       mchannel2.send(gembed);
-      mchannel3.send(gembed);
       console.log(`${mchannel0} est K.O`);
     } catch (error) {
       try {
         mchannel0.send(gembed);
         mchannel2.send(gembed);
-        mchannel3.send(gembed);
         console.log(`${mchannel1} est K.O`);
       } catch (error) {
-        try {
           mchannel0.send(gembed);
           mchannel1.send(gembed);
-          mchannel3.send(gembed);
-          console.log(`${mchannel2} est K.O`);
-        } catch (error) {
-          mchannel0.send(gembed);
-          mchannel1.send(gembed);
-          mchannel2.send(gembed);
-          console.log(`${mchannel3} est K.O`);
-        }
+          console.log(`${mchannel2} est K.O`);  
       }
     }
   }
